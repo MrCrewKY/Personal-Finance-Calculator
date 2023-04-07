@@ -37,9 +37,10 @@ int main(){
 		cout<<"\nPlease enter your monthly income."<<endl;
 		cin>>money.income;
 		cout<<"\nPlease enter your expenses for today, press 0 to calculate your spendings."<<endl;
-		while(money.expenses>0){
 		cin>>money.expenses;
+		while(money.expenses>0){
 		money.sum+=money.expenses;
+		cin>>money.expenses;
 		}
 		
 		money.balance=money.income-money.sum;
